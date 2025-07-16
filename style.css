@@ -79,7 +79,7 @@ button {
 
     .img-da-logo {
         width: 100%;
-        height: 20vh;
+        height: 13vh;
     }
 
     .caption {
@@ -93,7 +93,70 @@ button {
     }
 
     .paragraph {
-        margin-top: 30vw;
+        margin-top: 20vw;
+        color: white;
+        text-align: center;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .caption-2 {
+        color: white;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 2vw;
+    }
+
+    button {
+        background: #26cda4;
+        border: none;
+        border-radius: 7px;
+        color: white;
+        padding: 2vw;
+        width: 36vw;
+        margin-left: 12vw;
+        font-size: 3vw;
+    }
+
+    .Button {
+        text-align: center;
+        margin-left: -15vw;
+        margin-top: 3vw;
+    }
+
+    .Sala-linda {
+        width: 80vw;
+        border-radius: 12px;
+        margin-top: 15vw;
+        margin-left: 10vw;
+        margin-bottom: 10vw;
+    }
+}
+
+@media (min-width: 509px) {
+    body {
+        background-image: url(./img/fundo.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .img-da-logo {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .caption {
+        color: white;
+        width: 90vw;
+        height: 15vh;
+        text-align: center;
+        margin-left: 4vw;
+        font-size: 10vw;
+        line-height: 1.2;
+    }
+
+    .paragraph {
+        margin-top: 29vw;
         color: white;
         text-align: center;
         width: 80vw;
@@ -132,7 +195,47 @@ button {
     }
 }
 
-@media (max-width: 509px) {
+/* ======= INÍCIO DO CARROSSEL DE FUNDO ROTATIVO ======= */
+.slider {
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 10vw;
+}
+
+.slides {
+    display: flex;
+    animation: slide 18s infinite ease-in-out;
+    width: 500vw; /* 5 imagens = 5 x 100vw */
+}
+
+.slide {
+    width: 100vw;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.img-da-casa {
+    width: 80vw;
+    border-radius: 12px;
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+    margin-right: 8vw;
+}
+
+/* Animação automática */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100vw); }
+    45% { transform: translateX(-100vw); }
+    50% { transform: translateX(-200vw); }
+    70% { transform: translateX(-200vw); }
+    75% { transform: translateX(-300vw); }
+    95% { transform: translateX(-300vw); }
+    100% { transform: translateX(-400vw); }
+}
+@media (min-width: 571px) {
     body {
         background-image: url(./img/fundo.png);
         background-size: cover;
@@ -141,7 +244,7 @@ button {
 
     .img-da-logo {
         width: 100%;
-        height: 10vh;
+        height: 15vh;
     }
 
     .caption {
@@ -155,7 +258,110 @@ button {
     }
 
     .paragraph {
-        margin-top: 23vw;
+        margin-top: 26vw;
+        color: white;
+        text-align: center;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .caption-2 {
+        color: white;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 2vw;
+    }
+
+    button {
+        background: #26cda4;
+        border: none;
+        border-radius: 7px;
+        color: white;
+        padding: 2vw;
+        width: 36vw;
+        margin-left: 12vw;
+    }
+
+    .Button {
+        text-align: center;
+        margin-left: -15vw;
+        margin-top: 3vw;
+    }
+
+    .Sala-linda {
+        width: 80vw;
+        border-radius: 12px;
+        margin-top: 15vw;
+        margin-left: 10vw;
+        margin-bottom: 10vw;
+    }
+}
+
+/* ======= INÍCIO DO CARROSSEL DE FUNDO ROTATIVO ======= */
+.slider {
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 10vw;
+}
+
+.slides {
+    display: flex;
+    animation: slide 18s infinite ease-in-out;
+    width: 500vw; /* 5 imagens = 5 x 100vw */
+}
+
+.slide {
+    width: 100vw;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.img-da-casa {
+    width: 80vw;
+    border-radius: 12px;
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+    margin-right: 8vw;
+}
+
+/* Animação automática */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100vw); }
+    45% { transform: translateX(-100vw); }
+    50% { transform: translateX(-200vw); }
+    70% { transform: translateX(-200vw); }
+    75% { transform: translateX(-300vw); }
+    95% { transform: translateX(-300vw); }
+    100% { transform: translateX(-400vw); }
+}
+
+@media (min-width: 800px) {
+    body {
+        background-image: url(./img/fundo.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .img-da-logo {
+        width: 100%;
+        height: 26vh;
+    }
+
+    .caption {
+        color: white;
+        width: 90vw;
+        height: 15vh;
+        text-align: center;
+        margin-left: 4vw;
+        font-size: 10vw;
+        line-height: 1.2;
+    }
+
+    .paragraph {
+        margin-top: 39vw;
         color: white;
         text-align: center;
         width: 80vw;
